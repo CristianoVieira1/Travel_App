@@ -46,7 +46,7 @@ o aplicativo de pontos turísticos do sul do Brasil promete oferecer uma experi�
 Com muitas animações, uma interface amigável e recursos úteis. O aplicativo será lançado em breve, então fique ligado!
 
 <h1 align="center">
-  <img alt="Logo" src="./src/assets/screen/app.gif" width="150px">
+  <img alt="Logo" src="./src/assets/screen/app.gif" width="180px">
 </h1>
 
 ## 🚀 Tecnologias
