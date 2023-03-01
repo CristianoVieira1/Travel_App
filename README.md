@@ -41,7 +41,7 @@ de acordo com sua preferência. O aplicativo também poderá sugerir roteiros co
 O aplicativo terá muitas animações incríveis para tornar a experiência de navegação mais envolvente e emocionante.
 Desde animações de transição até animações de carregamento, o objetivo é fazer com que os usuários sintam que estão vivendo uma verdadeira aventura.
 
-# Em resumo;
+# Em resumo:
 o aplicativo de pontos turísticos do sul do Brasil promete oferecer uma experiência inesquecível para os viajantes.
 Com muitas animações, uma interface amigável e recursos úteis. O aplicativo será lançado em breve, então fique ligado!
 
