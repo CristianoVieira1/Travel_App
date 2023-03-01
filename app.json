@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Travel",
+    "slug": "Travel",
+    "version": "1.0.0",
+    "android": {
+      "googleServicesFile": "./google-services.json"
+    },
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O aplicativo acessa suas fotos para permitir que você as compartilhe com seus amigos."
+        }
+      ]
+    ]
+  },
+  "assetBundlePatterns": ["**/*"]
+}
