@@ -128,3 +128,5 @@ Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE](
 ---
 
 Feito com 💜 por Cristiano Borges 👋 [linkedin](https://www.linkedin.com/in/cristianobv/)
+
+Conheça meu Portfólio 🚀 [linkedin](https://cristianovieira1.github.io/portfolio/)
