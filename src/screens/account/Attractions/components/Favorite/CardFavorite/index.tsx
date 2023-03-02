@@ -3,28 +3,33 @@ import React, { memo } from "react";
 
 import { ImageBackground, StyleSheet } from "react-native";
 import * as S from "./styles";
-export interface CityesSchema {
+export interface CardFavoriteSchema {
   id: number;
   title: string;
-  picture: any;
-  description: string;
+  image: any;
   onPress?: () => void;
 }
 
-const Cityes = (props: CityesSchema) => {
+const CardFavorite = (props: CardFavoriteSchema) => {
   const navigation = useNavigation();
-  const { title, picture, description, onPress } = props;
+  const { title, image, onPress } = props;
 
   return (
     <S.Container>
-      <S.Content onPress={() => navigation.navigate("Attractions")}>
+      <S.Content onPress={() => {}}>
         <S.PictureArea>
           <ImageBackground
-            source={{ uri: picture }}
+            source={{ uri: image }}
             resizeMode="cover"
             style={[
               StyleSheet.absoluteFillObject,
-              { overflow: "hidden", zIndex: -1, borderRadius: 12 },
+              {
+                overflow: "hidden",
+                zIndex: -1,
+                borderRadius: 12,
+                width: 150,
+                height: 170,
+              },
             ]}
           >
             <S.ViewPicture />
@@ -32,11 +37,10 @@ const Cityes = (props: CityesSchema) => {
         </S.PictureArea>
         <S.Details>
           <S.Title>{title}</S.Title>
-          <S.Description>{description}</S.Description>
         </S.Details>
       </S.Content>
     </S.Container>
   );
 };
 
-export default memo(Cityes);
+export default memo(CardFavorite);

@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import THEME from "../../../../theme";
+import THEME from "../../../../../../theme";
 
 export const Container = styled.View.attrs({
   shadowOpacity: 0.2,
@@ -7,11 +7,10 @@ export const Container = styled.View.attrs({
   shadowColor: THEME.colors.black,
 })`
   elevation: 6;
-  width: 183px;
-  height: 280px;
+  width: 150px;
+  height: 170px;
   margin-right: 12px;
   border-radius: 6px;
-  /* background-color: ${({ theme }) => theme.colors.white}; */
 `;
 
 export const Content = styled.TouchableOpacity``;
@@ -19,7 +18,7 @@ export const Content = styled.TouchableOpacity``;
 export const Details = styled.View`
   bottom: 0;
   padding: 0 14px;
-  padding-bottom: 10px;
+  padding-bottom: 120px;
   position: absolute;
   justify-content: flex-start;
 `;

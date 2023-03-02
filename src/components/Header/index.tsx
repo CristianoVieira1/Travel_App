@@ -18,6 +18,7 @@ interface IProps {
   isLogount?: boolean;
   title?: string;
   isTitle?: boolean;
+  isMenu?: boolean;
 }
 
 const Header = ({
@@ -26,6 +27,7 @@ const Header = ({
   title,
   isImage = false,
   isLogount = false,
+  isMenu = false,
   color = theme.colors.white,
 }: IProps) => {
   const { session, removeSession, setSession } = useSession();
@@ -48,13 +50,16 @@ const Header = ({
     <S.Container>
       <StatusBar style="light" translucent backgroundColor="transparent" />
       <S.Content>
-        <Feather
-          name="menu"
-          size={26}
-          color={color}
-          style={{ left: 0, position: "absolute" }}
-          onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
-        />
+        {isMenu && (
+          <Feather
+            name="menu"
+            size={26}
+            color={color}
+            style={{ left: 0, position: "absolute" }}
+            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+          />
+        )}
+
         {isIconBack && (
           <Feather
             name="chevrons-left"

@@ -17,4 +17,5 @@ export type ParamList = {
     | undefined;
 
   Profile: undefined;
+  Attractions: undefined;
 };

@@ -3,7 +3,7 @@ import { ListRenderItem } from "react-native";
 
 import Cityes, { CityesSchema } from "./components/Cityes";
 
-import { Divider, Header, LeftHeaderSide, Offers, Title } from "./styles";
+import * as S from "./styles";
 
 const CityesOffersSection = () => {
   const Cityess: CityesSchema[] = [
@@ -55,15 +55,15 @@ const CityesOffersSection = () => {
 
   return (
     <Fragment>
-      <Divider />
+      <S.Divider />
 
-      <Header>
-        <LeftHeaderSide>
-          <Title>Cidades do Rio Grande do Sul</Title>
-        </LeftHeaderSide>
-      </Header>
+      <S.Header>
+        <S.LeftHeaderSide>
+          <S.Title>Cidades do Rio Grande do Sul</S.Title>
+        </S.LeftHeaderSide>
+      </S.Header>
 
-      <Offers
+      <S.Offers
         horizontal
         data={Cityess}
         renderItem={renderOffer}

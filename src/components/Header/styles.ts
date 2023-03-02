@@ -10,9 +10,6 @@ export const Content = styled.View`
   padding: 10px ${({ theme }) => theme.spacings.xlarge};
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  border-bottom-width: 1px;
-  border-bottom-color: ${({ theme }) => theme.colors.border};
   padding-bottom: ${({ theme }) => theme.spacings.xxsmall};
 `;
 

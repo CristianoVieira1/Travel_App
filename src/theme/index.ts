@@ -1,12 +1,12 @@
-import {
-  heightPercentageToDP,
-  widthPercentageToDP,
-} from "../utils/DeviceResolution";
+import { Dimensions } from "react-native";
+
+const width = Dimensions.get("window").width;
+const height = Dimensions.get("window").height;
 
 export default {
   device: {
-    width: widthPercentageToDP("100%"),
-    height: heightPercentageToDP("100%"),
+    width: width,
+    height: height,
   },
   border: {
     radius: "0.4rem",
