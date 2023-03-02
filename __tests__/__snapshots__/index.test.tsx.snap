@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Button snapshots 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "borderRadius": 8,
+      "elevation": 5,
+      "height": 50,
+      "justifyContent": "center",
+      "marginBottom": 10,
+      "opacity": 1,
+      "shadowColor": "#00000066",
+      "shadowOffset": Object {
+        "height": 3,
+        "width": 5,
+      },
+      "shadowOpacity": 0.5,
+      "shadowRadius": 2,
+      "width": "50%",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Image
+      size="medium"
+      source={1}
+      style={
+        Array [
+          Object {
+            "borderRadius": 8,
+            "display": "flex",
+            "width": "95%",
+          },
+        ]
+      }
+      type="accept"
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "PublicSans_500Medium",
+            "fontSize": 16,
+            "position": "absolute",
+          },
+        ]
+      }
+      type="accept"
+    >
+      Teste
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "marginLeft": 10,
+            "marginTop": 5,
+          },
+        ]
+      }
+    >
+      <Text />
+    </View>
+  </View>
+</View>
+`;

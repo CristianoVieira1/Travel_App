@@ -1,7 +1,6 @@
 import { TextInput, TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import { BackgroundColor } from ".";
-import Checked from "../../assets/icons/checked.svg";
 
 interface ComponentProps {
   disabled?: boolean;
@@ -76,9 +75,4 @@ export const ValidationMessage = styled.Text`
   line-height: 20px;
   color: ${({ theme }) => theme.colors.danger};
   font-family: ${({ theme }) => theme.fonts.medium};
-`;
-
-export const IconChecked = styled(Checked)`
-  size: 15px;
-  right: 15px;
 `;
