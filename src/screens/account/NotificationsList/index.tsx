@@ -1,9 +1,9 @@
 import React from "react";
 import * as S from "./styles";
-export const Notifications = () => {
+export const NotificationsList = () => {
   return (
     <S.Container>
-      <S.Title>Notifications</S.Title>
+      <S.Title>Notifications list</S.Title>
     </S.Container>
   );
 };

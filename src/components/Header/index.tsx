@@ -12,20 +12,26 @@ import * as S from "./styles";
 
 interface IProps {
   isIconBack?: boolean;
+  colorIconBack?: "white" | "black";
+  statusBar?: "light" | "dark";
   isIconMenu?: boolean;
   color?: string;
   isImage?: boolean;
   isLogount?: boolean;
   title?: string;
   isTitle?: boolean;
+  isMenu?: boolean;
 }
 
 const Header = ({
   isIconBack = true,
   isTitle = false,
   title,
+  colorIconBack = "white",
+  statusBar = "light",
   isImage = false,
   isLogount = false,
+  isMenu = false,
   color = theme.colors.white,
 }: IProps) => {
   const { session, removeSession, setSession } = useSession();
@@ -46,20 +52,23 @@ const Header = ({
   }
   return (
     <S.Container>
-      <StatusBar style="light" translucent backgroundColor="transparent" />
+      <StatusBar style={statusBar} translucent backgroundColor="transparent" />
       <S.Content>
-        <Feather
-          name="menu"
-          size={26}
-          color={color}
-          style={{ left: 0, position: "absolute" }}
-          onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
-        />
+        {isMenu && (
+          <Feather
+            name="menu"
+            size={26}
+            color={color}
+            style={{ left: 0, position: "absolute" }}
+            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+          />
+        )}
+
         {isIconBack && (
           <Feather
             name="chevrons-left"
             size={26}
-            color={color}
+            color={colorIconBack}
             style={{ left: 0, position: "absolute" }}
             onPress={() => navigation.goBack()}
           />

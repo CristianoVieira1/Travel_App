@@ -14,6 +14,8 @@ export const Container = styled.View.attrs({
   /* background-color: ${({ theme }) => theme.colors.white}; */
 `;
 
+export const Content = styled.TouchableOpacity``;
+
 export const Details = styled.View`
   bottom: 0;
   padding: 0 14px;

@@ -1,4 +1,3 @@
-import LottieView from "lottie-react-native";
 import React, { useEffect, useRef, useState } from "react";
 
 import Loading from "@assets/animations/loading.json";
@@ -31,11 +30,15 @@ export const SplashScreen = () => {
 
   async function handleNextRoute() {
     const onboard = await LocalStorage.getOnboard();
-    if (onboard !== null) {
+    const location = await LocalStorage.getLocation();
+    if (location === null) {
+      navigation.navigate("Location");
+      return;
+    } else if (onboard !== null) {
       navigation.navigate("InitialAccess");
       return;
-    }
-    navigation.navigate("Onboard");
+    } else navigation.navigate("Onboard");
+    return;
   }
 
   return (
@@ -52,16 +55,7 @@ export const SplashScreen = () => {
               useNativeDriver
               duration={5000}
             >
-              <LottieView
-                autoPlay
-                loop={true}
-                ref={animation}
-                style={{
-                  width: 200,
-                  height: 200,
-                }}
-                source={Loading}
-              />
+              <Lottie source={Loading} width={200} height={200} />
             </Animatable.View>
           </S.Content>
         )}

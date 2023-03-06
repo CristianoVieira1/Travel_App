@@ -14,7 +14,7 @@ export function Register() {
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : undefined}
       >
-        <Header />
+        <Header colorIconBack="black" statusBar="dark" />
         <S.Content>
           <Lottie source={signInAnimation} />
           <S.SubTitle>

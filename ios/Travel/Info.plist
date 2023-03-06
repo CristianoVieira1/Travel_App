@@ -18,6 +18,12 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>Permitir que $(PRODUCT_NAME) use sua localização</string>
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>Permitir que $(PRODUCT_NAME) use sua localização</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Permitir que $(PRODUCT_NAME) use sua localização</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

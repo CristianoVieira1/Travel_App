@@ -18,7 +18,6 @@ export function Lottie({ ...rest }: ILottieProps) {
         marginTop: 20,
       }}
       autoPlay
-      loop
       autoSize
       resizeMode="cover"
       {...rest}

@@ -4,6 +4,7 @@ import { User } from "src/types/Account";
 
 const userStorageKey = "@travel:user";
 const onBoardStorageKey = "@travel:onBoard";
+const locationStorageKey = "@travel:onLocation";
 
 class LocalStorage {
   static async getUser(): Promise<any> {
@@ -26,6 +27,21 @@ class LocalStorage {
 
   static async cleanOnboard(): Promise<unknown> {
     return await SecureStore.deleteItemAsync(onBoardStorageKey);
+  }
+
+  ////location
+
+  static async getLocation(): Promise<string | null> {
+    const isLocationEnabled = await AsyncStorage.getItem(locationStorageKey);
+    return isLocationEnabled ?? null;
+  }
+
+  static setLocation(locationToken: boolean): Promise<void> {
+    return AsyncStorage.setItem(locationStorageKey, locationToken.toString());
+  }
+
+  static async cleanLocation(): Promise<unknown> {
+    return await SecureStore.deleteItemAsync(locationStorageKey);
   }
 
   static async clean(): Promise<unknown> {

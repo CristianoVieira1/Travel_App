@@ -1,12 +1,12 @@
-import {
-  heightPercentageToDP,
-  widthPercentageToDP,
-} from "../utils/DeviceResolution";
+import { Dimensions } from "react-native";
+
+const width = Dimensions.get("window").width;
+const height = Dimensions.get("window").height;
 
 export default {
   device: {
-    width: widthPercentageToDP("100%"),
-    height: heightPercentageToDP("100%"),
+    width: width,
+    height: height,
   },
   border: {
     radius: "0.4rem",
@@ -20,7 +20,7 @@ export default {
       xxsmall: "10px",
       xsmall: "10px",
       small: "14px",
-      medium: "16px",
+      medium: "18px",
       large: "24px",
       xlarge: "30px",
       xxlarge: "39px",
@@ -56,6 +56,7 @@ export default {
     tarker: "#505059",
     placeholderInput: "#919191",
     inputBackground: "#F2F2F2",
+    locationBackground: "#10c4ac",
   },
   shadow: {
     shadowOpacity: 0.5,

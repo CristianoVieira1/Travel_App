@@ -13,6 +13,7 @@ import React, { useEffect, useState } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { RootSiblingParent } from "react-native-root-siblings";
 import { ThemeProvider } from "styled-components";
+import FirebaseNotifications from "./components/Controllers/FirebaseNotifications";
 import { UserSessionProvider, useSession } from "./context/Session";
 import LocalStorage from "./persistence/LocalStorage";
 import Routes, { navigationRef } from "./routes";
@@ -71,8 +72,14 @@ function App() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ThemeProvider theme={theme}>
         <NavigationContainer ref={navigationRef}>
-          <StatusBar style="light" translucent backgroundColor="transparent" />
-          <Routes />
+          <FirebaseNotifications>
+            <StatusBar
+              style="light"
+              translucent
+              backgroundColor="transparent"
+            />
+            <Routes />
+          </FirebaseNotifications>
         </NavigationContainer>
       </ThemeProvider>
     </GestureHandlerRootView>

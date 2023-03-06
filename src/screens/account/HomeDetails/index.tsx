@@ -35,6 +35,7 @@ const HomeDetails = (props: IProps) => {
           color={theme.colors.white}
           isIconMenu={false}
           isIconBack={true}
+          isMenu={false}
         />
 
         <S.TextView>

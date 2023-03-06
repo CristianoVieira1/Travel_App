@@ -4,7 +4,7 @@ import React from "react";
 import { useTheme } from "styled-components";
 import Home from "../account/Home";
 import { Menu } from "../account/Menu";
-import { Notifications } from "../account/Notifications";
+import { NotificationsList } from "../account/NotificationsList";
 import { Setings } from "../account/Setings";
 
 const BottomNav = createBottomTabNavigator();
@@ -62,7 +62,7 @@ export const Tabs = () => {
 
         <BottomNav.Screen
           name="Notifications"
-          component={Notifications}
+          component={NotificationsList}
           options={() => ({
             headerBackTitleVisible: false,
             headerBackground: () => null,
