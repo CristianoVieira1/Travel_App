@@ -10,11 +10,27 @@
       "googleServicesFile": "./GoogleService-Info.plist"
     },
     "plugins": [
-      "@react-native-google-signin/google-signin",
       [
         "expo-image-picker",
         {
           "photosPermission": "O aplicativo acessa suas fotos para permitir que você as compartilhe com seus amigos."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Permitir que Travel use sua localização."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./src/assets/images/ic_notification.png",
+          "color": "#FFF",
+          "sounds": [],
+          "androidMode": "default",
+          "androidCollapsedTitle": "Travel",
+          "iosDisplayInForeground": true
         }
       ]
     ]

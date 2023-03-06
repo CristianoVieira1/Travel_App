@@ -20,7 +20,7 @@ export default {
       xxsmall: "10px",
       xsmall: "10px",
       small: "14px",
-      medium: "16px",
+      medium: "18px",
       large: "24px",
       xlarge: "30px",
       xxlarge: "39px",
@@ -56,6 +56,7 @@ export default {
     tarker: "#505059",
     placeholderInput: "#919191",
     inputBackground: "#F2F2F2",
+    locationBackground: "#10c4ac",
   },
   shadow: {
     shadowOpacity: 0.5,

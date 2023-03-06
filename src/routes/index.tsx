@@ -20,10 +20,10 @@ const Routes = () => {
   const { session } = useSession();
 
   useEffect(() => {
-    // if (session.autenticated) {
-    const subscriber = auth().onAuthStateChanged(setUser);
-    return subscriber;
-    // }
+    if (session.autenticated) {
+      const subscriber = auth().onAuthStateChanged(setUser);
+      return subscriber;
+    }
   }, [session]);
 
   return user ? <PrivateRoutes /> : <PublicRoutes />;

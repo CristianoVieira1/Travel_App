@@ -1,4 +1,3 @@
-import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import React, {
   createContext,
   Dispatch,
@@ -40,14 +39,13 @@ export const UserSessionProvider = ({ children }: WithChildren) => {
 
   /////google
   const handleSigInGoogle = async (): Promise<void> => {
-    const { user } = await GoogleSignin.signIn();
-    console.log("user =====", user);
-    const sessionSchema = await new Session().mountSessionSchema(user);
+    // const { user } = await GoogleSignin.signIn();
+    // const sessionSchema = await new Session().mountSessionSchema(user);
 
-    await LocalStorage.setUser(user);
+    // await LocalStorage.setUser(user);
     setSession((prevSession) => ({
       ...prevSession,
-      ...sessionSchema,
+      // ...sessionSchema,
     }));
   };
 

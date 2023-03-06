@@ -12,6 +12,8 @@ import * as S from "./styles";
 
 interface IProps {
   isIconBack?: boolean;
+  colorIconBack?: "white" | "black";
+  statusBar?: "light" | "dark";
   isIconMenu?: boolean;
   color?: string;
   isImage?: boolean;
@@ -25,6 +27,8 @@ const Header = ({
   isIconBack = true,
   isTitle = false,
   title,
+  colorIconBack = "white",
+  statusBar = "light",
   isImage = false,
   isLogount = false,
   isMenu = false,
@@ -48,7 +52,7 @@ const Header = ({
   }
   return (
     <S.Container>
-      <StatusBar style="light" translucent backgroundColor="transparent" />
+      <StatusBar style={statusBar} translucent backgroundColor="transparent" />
       <S.Content>
         {isMenu && (
           <Feather
@@ -64,7 +68,7 @@ const Header = ({
           <Feather
             name="chevrons-left"
             size={26}
-            color={color}
+            color={colorIconBack}
             style={{ left: 0, position: "absolute" }}
             onPress={() => navigation.goBack()}
           />

@@ -14,7 +14,7 @@ export function SignIn() {
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : undefined}
       >
-        <Header />
+        <Header colorIconBack="black" statusBar="dark" />
         <S.Content>
           <Lottie source={signInAnimation} />
           <S.SubTitle>Bem vindo de volta!</S.SubTitle>

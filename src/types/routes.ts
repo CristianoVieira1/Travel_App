@@ -1,5 +1,6 @@
 export type ParamList = {
   SplashScreen: undefined;
+  Location: undefined;
   Onboard: undefined;
   InitialAccess: undefined;
   Logado: undefined;

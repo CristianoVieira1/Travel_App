@@ -1,6 +1,5 @@
 import { useSession } from "@context/Session";
 import auth from "@react-native-firebase/auth";
-import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import { useEffect, useState } from "react";
 import { isValidEmail } from "../../../../utils/validations";
 import { ISignInViewModel } from "../Interface/ISignInViewModel";
@@ -20,9 +19,9 @@ const useSignInViewModel = () => {
     return isValidEmail(email) && password.length >= 6;
   };
 
-  useEffect(() => {
-    GoogleSignin.configure({});
-  }, []);
+  // useEffect(() => {
+  //   GoogleSignin.configure({});
+  // }, []);
 
   useEffect(() => {
     setTimeout(() => {
