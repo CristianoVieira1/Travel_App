@@ -35,7 +35,7 @@ export const SplashScreen = () => {
       navigation.navigate("Location");
       return;
     } else if (onboard !== null) {
-      navigation.navigate("InitialAccess");
+      navigation.navigate("Onboard");
       return;
     } else navigation.navigate("Onboard");
     return;

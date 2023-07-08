@@ -2,7 +2,6 @@ import { useNavigation } from "@react-navigation/native";
 import React, { useState } from "react";
 import * as Animatable from "react-native-animatable";
 import Button from "../../components/Button";
-import LocalStorage from "../../persistence/LocalStorage";
 import Slider from "./components/Slider";
 import Slide from "./components/Slider/Slide";
 import * as S from "./styles";
@@ -54,7 +53,7 @@ const Onboard = () => {
   const next = slides[index + 1];
 
   async function handleNextRoute() {
-    await LocalStorage.setOnboard(true);
+    // await LocalStorage.setOnboard(true);
     navigation.navigate("InitialAccess");
   }
 

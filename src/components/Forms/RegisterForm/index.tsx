@@ -1,10 +1,9 @@
 import Button from "@components/Button";
 import ModalSuccessRegister from "@components/Controllers/ModalSuccesRegister";
 import InputText from "@components/InputText";
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import * as S from "./styles";
 import useRegisterViewModel from "./ViewModel/useRegisterViewModel";
+import * as S from "./styles";
 
 export function RegisterForm() {
   const {
@@ -23,7 +22,6 @@ export function RegisterForm() {
     name,
     setName,
   } = useRegisterViewModel();
-  const navigation = useNavigation();
 
   return (
     <S.Form>
